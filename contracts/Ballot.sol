@@ -51,8 +51,6 @@ contract Ballot {
             // appends it to the end of 'proposals'.
             proposals.push(Proposal({name: proposalNames[i], voteCount: 0}));
         }
-
-        uint256 endTime = startTime + 5 minutes;
     }
 
     /**
