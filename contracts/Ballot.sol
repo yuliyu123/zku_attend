@@ -29,7 +29,7 @@ contract Ballot {
 
     uint256 public startTime;
 
-    // if the block.timestamp greater than startTime + 5 minutes, revert
+    // if the block.timestamp greater than startTime + 5 minutes, revert because time expired
     modifier voteEnded() {
         if (block.timestamp > startTime + 5 minutes) {
             revert("ballot has expired");
